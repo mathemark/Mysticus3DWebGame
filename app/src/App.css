@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color:black;
+    overflow-y: scroll;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+form {
+    margin-bottom: 10px;
+
+}
+
+#overlay {
+    color: white;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#ovelay-container {
+    position: absolute;
+    color: aliceblue;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: rgb(0, 255, 255,0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#text-container {
+    position: fixed;
+    top: 110px;
+    left: 320px;
+    color:aliceblue;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: rgb(0, 255, 255,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+#about-text-container {
+    height: 150px;
+    position: absolute;
+    color: aliceblue;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+    text-align: justify;
+    flex: 1;
+}
+
+#about-text-container h1 {
+    text-align: center;
+    justify-content: center; /* Align the items horizontally in the center */
+}
+
+#reg-main-text-container {
+    height: 150px;
+    position: absolute;
+    color: aliceblue;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+    text-align: justify;
+    flex: 1;
+}
+
+#register-text-container {
+    height: 150px;
+    position: absolute;
+    color: aliceblue;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+    text-align: center;
+    justify-content: center;
+}
+
+.reg-input {
+    width: 50%;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 2px solid #8F43EE;
+    border-radius: 18px;
+    color: aliceblue;
+    background-color: transparent;
+}
+.reg-input:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px rgba(0, 255, 255, 0.1);
+    background-color: rgba(0, 255, 255, 0.1);
+    color: aliceblue;
+    border-color: #00ffff;
+}
+
+#input-container {
+    position: fixed;
+    color: aliceblue;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: rgb(0, 255, 255,0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+#input-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid aliceblue;
+    border-radius: 4px;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 16px;
+    
+}
+
+#login-main-text-container {
+    height: 150px;
+    position: absolute;
+    color: aliceblue;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+    text-align: justify;
+    flex: 1;
+}
+
+#login-text-container {
+    height: 150px;
+    position: absolute;
+    color: aliceblue;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.login-input {
+    width: 50%;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 2px solid #8F43EE;
+    border-radius: 18px;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+.login-input:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px rgba(0, 255, 255, 0.1);
+    background-color: rgba(0, 255, 255, 0.1);
+    color: aliceblue;
+    border-color: #00ffff;
+}
+
+.login-fade-in-from-black {
+    background-color: black;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.login-fade-in-from-black.fade-in {
+    opacity: 1;
+}
+
+.login-fade-in-from-black.fade-out {
+    opacity: 0;
+}
+
+.fade-in-from-black {
+    background-color: black;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.fade-in-from-black.fade-in {
+    opacity: 1;
+}
+
+.fade-in-from-black.fade-out {
+    opacity: 0;
+}
+.fade-in-from-black.fade-half {
+    opacity: 0.2;
+}
+
+.button-style {
+    font-size: 25px;
+    font-weight: normal;
+    width: 200px;
+    color: aliceblue;
+    background-color: rgb(0, 178, 178, 0.18);
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px rgba(0, 255, 255, 0.2);
+    border: 2px solid rgba(0, 255,255, 0.2);
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+    margin: 0 20px; /* Add margin to separate the buttons */
+
+}
+
+.button-style-small {
+    font-size: 15px;
+    font-weight: normal;
+    width: 100px;
+    color: aliceblue;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(0, 255,255, 0.4);
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+    margin: 0px 20px; /* Add margin to separate the buttons */
+    transform: translate(10%, 15%);
+   
+}
+
+.button-style:active {
+    transform: translate(0%, calc(5% ));
+    box-shadow: 0px 2px 0px rgba(0, 255, 255, 0.5);
+}
+
+.button-style-small:active {
+    transform: translate(10%, calc(20% ));
+    box-shadow: 0px 2px 0px rgba(0, 255, 255, 0.7);
+}
+
+#button-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+#cantrelize {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+/*MODAL*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgba(0,0,0,0.0);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translate(-5%, -38%) translateX(100%);
+    }
+
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+.modal.delayed {
+    animation: fade-in 0.5s ease-in-out forwards;
+    animation-delay: 0.3s; 
+}
+
+@keyframes fade-in {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+}
+
+.modal.closing {
+    animation: fade-out 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.modal.closing.delayed {
+    animation: slide-out 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-out {
+    from {
+        transform: translate(0%, 0%);
+    }
+
+    to {
+        transform: translate(-5%, -38%) translateX(100%);
+    }
+}
+
+.modal-content {
+    background-color: rgba(0,255,255,0.3);
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal h2 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #8F43EE;
+    text-align: center;
+}
+
+.modal span {
+    color:aqua;
+}
+
+
+.modal form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal label {
+    margin-bottom: 5px;
+    padding-right: 10px 10px; 
+    color: white;
+}
+
+
+.modal-button-container {
+    position: fixed;
+    top: 10%;
+    right: -45px;
+    transform: rotate(90deg);
+    
+    
+}
+
+.modal-login-input {
+    width: 80%;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 2px 2px;
+    box-sizing: border-box;
+    border: 2px solid #8F43EE;
+    border-radius: 18px;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+.modal-login-input:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px rgba(0, 255, 255, 0.1);
+    background-color: rgba(0, 255, 255, 0.1);
+    color: aliceblue;
+    border-color: #00ffff;
+}
+
+.modal-button-style-small {
+    font-size: 18px;
+    font-weight: normal;
+    width: 100px;
+    color: aliceblue;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 5px 0px rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(0, 255,255, 0.4);
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+    margin: 8px 40px; 
+    align-content: flex-end;
+}
+
+.modal-button-style-small-left {
+    font-size: 18px;
+    font-weight: normal;
+    width: 85px;
+    color: aliceblue;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 5px 0px rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(0, 255,255, 0.4);
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+    margin: 1px 30px;
+}
+
+.modal-button-style-small-chgpswd {
+    font-size: 10px;
+    font-weight: normal;
+    width: 75px;
+    color: aliceblue;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 5px 0px rgba(255, 0, 255, 0.5);
+    border: 2px solid rgba(255, 0,255, 0.4);
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+    margin: 10px -10px;
+}
+
+.modal-button-style-small:active {
+    transform: translate(0%, calc(5% ));
+    box-shadow: -0.3px 2px 0px rgba(0, 255, 255, 0.5);
+}
+
+.modal-button-style-small-left:active {
+    transform: translate(0%, calc(5% ));
+    transform: rotate(90deg);
+    box-shadow: 5px -0.8px 0px rgba(0, 255, 255, 0.7);
+}
+
+.modal-button-style-small-chgpswd:active {
+    transform: translate(0%, calc(5% ));
+    box-shadow: 1px 5px 0px rgba(255, 0, 255, 0.7);
+}
+
+.modal-button {
+    font-size: 20px;
+    font-weight: normal;
+    width: 120px;
+    color: aliceblue;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 0px 0px rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(0, 255,255, 0.4);
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+    margin: 0px 20px; 
+}
+
+.modal-button:active {
+    transform: translate(0%, calc(5% ));
+    box-shadow: 3px 1px 0px rgba(0, 255, 255, 0.5);
+}
+
+.modal.animate {
+    transform: translateX(-90%);
+}

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\public",
+    "\\app\\src",
+    "\\app\\src\\components",
+    "\\db",
+    "\\db\\api",
+    "\\db\\api\\migrations",
+    "\\db\\db"
+  ],
+  "SelectedNode": "\\app\\src\\components\\dummy.js",
+  "PreviewInSolutionExplorer": false
+}
