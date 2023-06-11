@@ -15,6 +15,10 @@ Ha a kiterjesztések telepítés sikeresen megtörtént a lépések a következ�
 
 ### Telepítés 💾
 
+A telepítés elvileg nem szükséges, mert a modulok is feltöltésre kerültet, emiatt a fájl mérete nagyob,b de így egyből tovább léphet 
+a <b>Program indítása és ellenőrzése</b> bekezdéshez. 
+Ha valamely kiegészítő még is hiányozna, a telepítési útmutatóban megtalálja azt. 
+
 <b>Django</b> parancssorból való telepítésének kódja:
 ```
 pip install Django
@@ -119,8 +123,11 @@ python manage.py runserver
 
 <b>Az admin felület elérési címe:</b>
 http://127.0.0.1/8000/admin
+Admin felhasználó: Fawkes
+Jelszó: asd123
 
 <b>Ahhoz, hogy teljes egészébe tudjuk használni a weblapot, mindkét szervert el kell indítani egyszerre.</b>
+A pyhton szerver tartalmazza a react build-et ami az alap URL címen érhető el, de érdemes úgy ellenőrizni, hogy a két szervert külön elindítjuk. 
 
 ## Szerző ✒️
 
