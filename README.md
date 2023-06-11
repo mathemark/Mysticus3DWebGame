@@ -123,7 +123,9 @@ python manage.py runserver
 
 <b>Az admin felület elérési címe:</b>
 http://127.0.0.1/8000/admin
+
 Admin felhasználó: Fawkes
+
 Jelszó: asd123
 
 <b>Ahhoz, hogy teljes egészébe tudjuk használni a weblapot, mindkét szervert el kell indítani egyszerre.</b>
