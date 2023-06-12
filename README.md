@@ -15,7 +15,7 @@ Ha a kiterjesztések telepítés sikeresen megtörtént a lépések a következ�
 
 ### Telepítés 💾
 
-A telepítés elvileg nem szükséges, mert a modulok is feltöltésre kerültet, emiatt a fájl mérete nagyobb, de így egyből tovább léphet 
+A telepítés elvileg nem szükséges mert a modulok is feltöltésre kerültek, emiatt a fájl mérete nagyobb, de így egyből tovább léphet 
 a <b>Program indítása és ellenőrzése</b> bekezdéshez. 
 Ha valamely kiegészítő még is hiányozna, a telepítési útmutatóban megtalálja azt. 
 
